@@ -270,15 +270,8 @@ body{
   font-size: 3rem;
 }
 @media screen and (max-width: 1020px) {
-  ::-webkit-scrollbar {
-    width: 1em;
-    background-color: #151516;
-    
-  } 
-  ::-webkit-scrollbar-thumb {
-    background-color: #e97957;
-    border-radius: 15px;
-  
+  .modal_reg{
+    margin: auto;
   }
   .modalCardWrapper {
       flex-direction: column;
@@ -326,16 +319,7 @@ body{
 
 
 @media screen and (max-width: 600px) {
-  ::-webkit-scrollbar {
-    width: 1em;
-    background-color: #151516;
-    
-  } 
-  ::-webkit-scrollbar-thumb {
-    background-color: #e97957;
-    border-radius: 15px;
-  
-  }
+
   .gallery{
     width: 100%;
   }
