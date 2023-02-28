@@ -353,3 +353,28 @@ body{
   }
 }
 
+
+
+.button {
+  background: none;
+  border: 3px solid #e97957;
+  color: #bff8fb;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 0.9rem 'Roboto Slab', sans-serif;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  margin-bottom: 1.6rem;
+  width: 7rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(0deg, transparent 50%, #e97957 50%);
+  background-size: 400px 80px;
+  transition: all 0.4s;
+}
+.button:hover{
+  background-position: 200px 0;
+  color: #272133;
+}
