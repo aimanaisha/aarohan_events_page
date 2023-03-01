@@ -368,7 +368,7 @@ body{
   justify-content: center;
   background: -webkit-linear-gradient(0deg, transparent 50%, #e97957 50%);
   background-size: 400px 80px;
-  -webkit-transform: perspective(180px) rotateY(15deg) rotateX(15deg); 
+  -webkit-transform: perspective(115px) rotateY(13deg) rotateX(13deg); 
   transition: all 0.4s;
 }
 .button:hover{
