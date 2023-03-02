@@ -62,12 +62,21 @@ body{
   text-align: center;
   line-height:22px;
 }
-
+/* .frame{
+  width: 85%;
+  margin: auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:260px;
+} */
 .card__image {
-  /* height: 250px; */
-  width: 95%;
+  /* max-height: 260px; */
+  max-height: 260px;
+  width: 85%;
   border: 5px solid #272133;
-  /* margin-top: 20px; */
+  margin-top: 20px;
   box-shadow: 0 5px 30px #6d8d8f;
 }
 .buttons{
