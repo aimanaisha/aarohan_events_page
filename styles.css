@@ -67,11 +67,13 @@ body{
 }
 
 .card__image {
-  max-height: 260px;
+  height: 260px;
   width: 85%;
   border: 5px solid #272133;
   margin-top: 20px;
   box-shadow: 0 5px 30px #6d8d8f;
+  object-fit: cover;
+  background-color: #272133;
 }
 .buttons{
   display: flex;
