@@ -2,17 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
 body{
-  background-image: url('./poster/b1.jpg');
+  background-image: url('./assets/b1.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background-color: #060c24;
   padding-top: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -23,7 +28,6 @@ body{
   justify-content: center;
   
   align-items: center;
-  background-color: #61463d2d;
   font-family:'Roboto Slab', sans-serif;
 
 }
@@ -40,7 +44,6 @@ body{
   font-weight: 700;
 }
 .card {
-  /* background-color: #222831b6; */
   background-color: #280f0aad;
   display: flex;
   flex-direction: column;
@@ -57,23 +60,13 @@ body{
   color: #e97957;
   margin-bottom: 10px;
   font-size: 1.15rem;
-  /* font-family: 'Josefin Sans', sans-serif; */
   font-family: 'Unbounded', cursive;
   max-width: 100%;
   text-align: center;
   line-height:22px;
 }
-/* .frame{
-  width: 85%;
-  margin: auto;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:260px;
-} */
+
 .card__image {
-  /* max-height: 260px; */
   max-height: 260px;
   width: 85%;
   border: 5px solid #272133;
@@ -88,9 +81,7 @@ body{
   border: none;
   cursor: pointer;
   line-height: 1.5;
-  /* font: 700 0.9rem 'Roboto Slab', sans-serif; */
-  /* font-family: 'Kanit', sans-serif; */
-  /* padding: 0.65em 0.5em; */
+
   font-family: 'Changa', sans-serif;
   letter-spacing: 0.05rem;
   margin: 1em;
@@ -184,7 +175,6 @@ body{
   position: fixed;
 }
 .modalCard {
-  /* background-color: #22283100; */
   border: solid #e97957 4px;
   width: 1000px;
   height: 730px;
@@ -193,21 +183,16 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  /* position: relative; */
-  /* margin: 18px 6.5px; */
   z-index: 1000000;
   backdrop-filter: blur(2px);
   overflow-y: scroll;
   overflow-x: hidden;
 
 }
-
-
 .cross {
   width: 24px !important;
   height: 24px !important;
   cursor: pointer;
-  /* background-color: orange; */
 }
 .close {
   display: flex;
@@ -220,7 +205,6 @@ body{
 .modalCardWrapper {
   display: flex;
   align-items: center;
-  /* background-color: yellow; */
 
 }
 .modalCardWrapper img {
@@ -243,15 +227,11 @@ body{
 .modalCardWrapper h1 {
     margin-top: 41px;
     color: #e97957;
-  /* font-family: 'Josefin Sans', sans-serif; */
   font-family: 'Unbounded', cursive;
-
-
 }
 .time {
   display: flex;
   color: #bff8fb;
-  /* font-family:'Roboto Slab', sans-serif; */
   font-family: 'Kanit', sans-serif;
 
   justify-content: space-between;
@@ -275,7 +255,6 @@ body{
 }
 .head{
   color: #e97957;
-  /* font-family: 'Josefin Sans', sans-serif; */
   font-family: 'Unbounded', cursive;
 
   margin: 3.5rem;
@@ -285,16 +264,6 @@ body{
 .modal_reg{
   margin-left: 0px;
 }
-/* @media screen and (max-width: 1020px){
-::-webkit-scrollbar {
-  width: 1em;
-  background-color: #151516;
-  
-} 
-::-webkit-scrollbar-thumb {
-  background-color: #e97957;
-}
-} */
 @media screen and (max-width: 1020px) {
 
   .modalCard{
@@ -387,16 +356,12 @@ body{
   }
 }
 
-
-
 .button {
   background: none;
   border: 3px solid #e97957;
   color: #bff8fb;
   cursor: pointer;
   line-height: 1.5;
-  /* font: 700 0.9rem 'Roboto Slab', sans-serif; */
-  /* font-family: 'Kanit', sans-serif; */
   font-family: 'Changa', sans-serif;
   letter-spacing: 0.05rem;
   margin: 1em;
@@ -422,13 +387,10 @@ body{
 
 /* navbar and footer */
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .aarohan_logo{
-  /* display: inline; */
   z-index: 100000;
     position: fixed;
     top: 0px;
@@ -465,7 +427,7 @@ body{
   padding: 0;
   margin: 0;
   cursor: pointer;
-  z-index: 10;
+  z-index: 20000;
 }
 .menu-icon:checked + label:before,
 .menu-icon:not(:checked) + label:before{
@@ -534,7 +496,7 @@ body{
   height: 80px;
   padding: 0;
   margin: 0;
-  z-index: 9;
+  z-index: 10000;
   overflow: hidden;
   box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
   background-color: #280e09db;
@@ -628,7 +590,7 @@ body{
   font-size: 3.3rem;
   text-decoration: none;
   line-height: 1.2;
-  /* letter-spacing: 1px; */
+
   font-weight: 500;
   display: inline-block;
   position: relative;
@@ -639,24 +601,9 @@ body{
   text-decoration: none;
   color: #fff;
 }
-/* .nav ul li a:after{
-  display: block;
-  position: absolute;
-  top: 50%;
-  content: '';
-  height: 2vh;
-  margin-top: -1vh;
-  width: 0;
-  left: 0;
-  background-color: #280e09;
-  opacity: 0.8;
-  transition: width 250ms linear;
-} */
 .nav ul li a:hover:after{
   width: 100%;
 }
-
-
 .menu-icon:checked ~ .nav  ul li {
   pointer-events: auto;
   visibility: visible;
@@ -692,9 +639,6 @@ body{
   .menu-icon:checked ~ .nav ul li:nth-child(9){
     transition-delay: 2040ms;
   }
-
-
-
 .logo {
 	position: absolute;
 	top: 60px;
@@ -708,9 +652,6 @@ body{
 	width: auto;
 	display: block;
 }
-
-
-
 @media screen and (max-width: 991px) {
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label{
@@ -740,70 +681,105 @@ body{
 
 
   /* footer */
-.footer_logo{
-    width: 60px;
-    height: 60px;
-}
-  footer{
-    /* position: absolute;
-    
-    bottom: 0;
-    left: 0;
-    right: 0; */
-    background: #280e09fd;
-    height: auto;
+
+  .footer {
+    position: relative;
     width: 100%;
-    /* font-size: 2rem; */
-    font-family: 'Raleway', sans-serif;
-    padding-top: 30px;
-    color: #fff;
-}
-.footer-content{
+    background: #e97957;
+    min-height: 100px;
+    padding: 5px 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
-}
-
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
-}
-.socials{
-    padding-right: 40px;
-    list-style: none;
+    margin-top: 10rem;
+  }  
+  .social-icon {
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 1rem 0 1.5rem 0;
-}
-.socials li{
-    margin: 0 10px;
-}
-.socials a{
-    text-decoration: none;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }  
+  .social-icon__link {
+    font-size: 2rem;
     color: #fff;
-    border: 1.1px solid white;
-    padding: 5px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+  }  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../assets/wave1.png");
+    background-size: 1000px 100px;
+  }  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  @media screen and (max-width: 400px){
+    .footer p{
+      font-size: 1rem;
+    }
+  }
 
-    border-radius: 50%;
-
-}
-.socials a i{
-    font-size: 1.1rem;
-    width: 20px;
 
 
-    transition: color .4s ease;
-
-}
-.socials a:hover i{
-    color: #e97957;
-}
 
 
 
