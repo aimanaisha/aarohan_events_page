@@ -696,6 +696,12 @@ body{
   .nav ul li:nth-child(9){
     transition-delay: 40ms;
   }
+  .nav ul li:nth-child(10){
+    transition-delay: 20ms;
+  }
+  .nav ul li:nth-child(11){
+    transition-delay: 0ms;
+  }
 .nav ul li a{
     font-family: 'Raleway', sans-serif;
   font-size: 3.3rem;
@@ -749,6 +755,12 @@ body{
   }
   .menu-icon:checked ~ .nav ul li:nth-child(9){
     transition-delay: 2040ms;
+  }
+  .menu-icon:checked ~ .nav ul li:nth-child(10){
+    transition-delay: 2120ms;
+  }
+  .menu-icon:checked ~ .nav ul li:nth-child(11){
+    transition-delay: 2200ms;
   }
 .logo {
 	position: absolute;
