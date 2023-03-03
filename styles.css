@@ -6,7 +6,6 @@
 *{
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 body{
@@ -384,10 +383,93 @@ body{
   background-position: 200px 0;
   color: #272133;
 }
+/* dropdown */
 
+.menu, .drop-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #e97957;
+
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-item a {
+  text-decoration: none;
+  padding: 6px 10px;
+  /* color: #e97957; */
+  display: block;
+  
+}
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  background-color: #280e09c8;
+  /* width: 200px; */
+  /* max-width: 500px; */
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  border: solid #e97957 3px;
+}
+
+.menu-item:hover .drop-menu {
+  display: block;
+}
 
 
 /* navbar and footer */
+
+
+
+.navMenu {
+  font-family: 'Unbounded', cursive;
+  
+  width: 100%;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  padding: 5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 20000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+}
+
+.navMenu a {
+  color: #e8dbd6;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.3s;
+}
+.navMenu a:hover{
+  color: #e97957;
+}
+.navMenu a:active{
+  color: #e97957;
+}
+@media screen and (max-width: 1550px){
+.navMenu a {
+  font-size: 0.8rem
+}}
+@media screen and (max-width: 1400px){
+  .navMenu {
+    display: none;
+  }
+}
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -423,7 +505,8 @@ body{
   position: fixed;
   top: 63px;
   right: 75px;
-  display: block;
+  /* display: block; */
+  display: none;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -435,7 +518,9 @@ body{
 .menu-icon:not(:checked) + label:before{
   position: absolute;
   content: '';
-  display: block;
+  /* display: block; */
+  display: none;
+
   width: 30px;
   height: 20px;
   z-index: 20;
@@ -453,7 +538,9 @@ body{
 .menu-icon:not(:checked) + label:after{
   position: absolute;
   content: '';
-  display: block;
+  /* display: block; */
+  display: none;
+
   width: 22px;
   height: 2px;
   z-index: 20;
@@ -493,7 +580,8 @@ body{
   position: fixed;
   top: 33px;
   right: 50px;
-  display: block;
+  /* display: block; */
+  display: none;
   width: 80px;
   height: 80px;
   padding: 0;
@@ -508,6 +596,27 @@ body{
               transform 250ms 1100ms ease,
               width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
               height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@media screen and (max-width: 1400px){
+  .nav{
+    display: block;
+  }
+  .menu-icon:checked + label:after,
+.menu-icon:not(:checked) + label:after{
+  display: block;
+}
+.menu-icon:checked + label,
+.menu-icon:not(:checked) + label{
+  display: block;
+}
+.menu-icon:checked + label,
+.menu-icon:not(:checked) + label{
+  display: block;
+}
+.menu-icon:checked + label:before,
+.menu-icon:not(:checked) + label:before{
+  display: block;
+}
 }
 @keyframes border-transform{
     0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
